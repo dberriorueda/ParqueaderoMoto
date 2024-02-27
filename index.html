@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parqueadero</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./imagenes/logo.jpg" alt="Logo del Parqueadero" class="Logo">
+        <h1>Parqueadero la Avenida</h1>
+        <form id="parkingForm">
+            <label for="vehicleType">Tipo de vehiculo:</label>
+            <select  id="vehicleType">
+                <option value="moto">Moto</option>
+            </select>
+            <label for="entryTime">Hora de Entrada:</label>
+            <input type="time" id="entryTime" required><br>
+            <button type="submit">Registrar Entrada</button>
+        </form>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
