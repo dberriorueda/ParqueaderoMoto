@@ -7,24 +7,33 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <!--Contenedor principal-->
     <div class="container">
         <img src="./imagenes/logo.jpg" alt="Logo del Parqueadero" class="Logo">
         <h1>Parqueadero la Avenida</h1>
-        <form id="parkingForm">
-            <label for="vehicleType">Tipo de vehiculo:</label>
-            <select  id="vehicleType">
-                <option value="moto">Moto</option>
-            </select>
-            <label for="licensePlate">Numero de placa:</label>
-            <input type="text" id="licensePlate" required> <br>
-            <label for="entryTime">Hora de Entrada:</label>
-            <input type="time" id="entryTime" required><br>
-            <button type="submit">Registrar Entrada</button>
-
-            <label for="exitTime">Hora de Salida:</label>
-            <input type="time" id="exitTime" required> <br>
-            <button type="submit">Registrar Salida</button>
-        </form>
+        <p class="parrafo">Nit 8904050</p>
+        <!--Formulario para el ingreso de la mot-->
+        <div class="form-container">
+            <form id="parkingForm">
+                <label for="vehicleType">Tipo de vehiculo:</label><br>
+                <select  id="vehicleType">
+                    <option value="moto">Moto</option> 
+                </select>
+                <label for="entrylicensePlate">Numero de placa:</label>
+                <input type="text" id="licensePlate" required> <br>
+                <label for="entryTime">Hora de Entrada:</label>
+                <input type="time" id="entryTime" required><br>
+                <button type="submit">Registrar Entrada</button>
+            </form>
+            <!--Formulario para la salida de la moto-->
+            <form id="exitForm">
+                <label for="exitlicensePlate">Numero de placa:</label>
+                <input type="text" id="exitLicensePlate" required>
+                <label for="exitTime">Hora de Salida:</label>
+                <input type="time" id="exitTime" required> <br>
+                <button type="submit">Registrar Salida</button>
+            </form>
+        </div>
         <div id="output"></div>
     </div>
 
